@@ -57,12 +57,12 @@
     <div class="slim-navbar"  style="margin-bottom:20px;">
         <div class="container">
           <ul class="nav">
-            <li class="nav-item">
-                <router-link :to="{ name: 'home' }"  class="nav-link"><span> <i class="fa fa-home"></i> Dashboard</span></router-link>
-            </li>
-            <li class="nav-item">
-                <router-link :to="{ name: 'product' }"  class="nav-link"><span>  <i class="fa fa-cubes "></i> Products </span></router-link>
-            </li>
+              <router-link tag="li" active-class="active"  :to="{ name: 'home' }"  class="nav-item" exact>
+                <a href="" class="nav-link"><span><i class="fa fa-home"></i> Dashboard</span></a> 
+              </router-link>
+              <router-link tag="li" active-class="active"  :to="{ name: 'product' }"  class="nav-item" exact>
+                  <a href="" class="nav-link"><span><i class="fa fa-home"></i> Product</span></a> 
+              </router-link>
             
             <li class="nav-item {{Request::is('supplier') || Request::is('supplier/*') ? 'active' : '' }}">
               <a class="nav-link" href="">

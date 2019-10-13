@@ -6,8 +6,7 @@ import Product from './components/Product'
 
 const router = new VueRouter({
     mode:'history',
-    routes: [
-        {
+    routes: [{
             path: '/pos',
             name: 'home',
             component: Home
